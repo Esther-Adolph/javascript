@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>user input</title>
+</head>
+<h1 id="name"></h1>
+<h2 id="age"></h2>
+<P id="byear"></P>
+<h3 id="restriction"></h3>
+<body>
+  <script>
+    let iName = window.prompt("what is your name");
+    let iAge = window.prompt("what is your age?");
+
+     document.getElementById("name").innerHTML=iName;
+     document.getElementById("age").innerHTML=iAge;
+
+
+     let cYear = 2022;
+     let bYear = cYear - iAge;
+     document.getElementById("byear").innerHTML=bYear;
+
+     
+
+  </script>
+</body>
+</html>
